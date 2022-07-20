@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+        <h1>Imagem dinâmica</h1>
+        <p>Tente abrir este site em vários dispositivos diferentes,
+            ou simplesmente aumente e diminua o tamanho da janela do seu
+            navegador.
+        </p>
+        <h4> Tags usadas para tal façanha: </h4>
+        <ol>
+            <li>&lt;picture&gt;</li>
+            <li>&lt;source&gt;
+                <ul>
+                    <li> media </li>
+                    <li> srcset</li>
+                    <li> type </li>
+                </ul>
+            </li>
+            <li>&lt;img&gt;
+                <ul>
+                    <li>src</li>
+                    <li>alt</li>
+                </ul>
+            </li>
+        </ol>
+        
+        <picture>
+            <source media="(max-width:750px)" srcset="imagens/img_p.png" 
+            type="image/png">
+            <source media="(max-width:1050px)" srcset="imagens/img_m.png"
+             type="image/png">
+            <img src="imagens/img_g.png" alt="Imagem flexível">
+        </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender como reprozir audios no seu site, a estrutura é bem parecida com a de imagem</p>
+    <p>Quando falamos de audio, temos que ter sempre em mente a compatibilidade dele com os diferentes tipos de navegadores
+        de madeira geral os Formatos mais aceitos sao MPEG, OGG e WAV. O ideal é sempre colocar no seu código se o arquivo
+        estiver hospedado no seu servidor os diferentes formatos de arquivo, para assim obter maior compatibilidade.
+        lembrando que a ordem do código usado nesse exercício é importante...... o ideal é sempre do mais compatível para o 
+        menos compatível, evitando assim carregamentos desnecessários. WAV é o menos útil dessa lista, pq WAV é mt pesado.
+    </p>
+     <h4>Tags utilizadas para audio:</h4>
+     <ol>
+        <li>&lt;Audio&gt;
+            <ul>
+                <li>Preload ( uma das mais importantes, ele diz que o seu navegador vai carregar somente o basico do arquivo de audio )</li>
+                <li>Autoplay</li>
+                <li>Control</li>
+            </ul>
+        </li>
+        <li>&lt;Source&gt; 
+            <ul>
+                <li>src</li>
+                <li>type</li>
+            </ul>
+        </li>
+     </ol>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/Illusions-anno_domini_beats.mp3" type="audio/mp3">
+        <source src="midia/Illusions-anno_domini_beats.ogg" type="audio/ogg">
+        <source src="midia/Illusions-anno_domini_beats.wav" type="audio/wav">
+        <p>Infelizmente seu navegador nao consegue reproduzir auio <a href="midia/Illusions-anno_domini_beats.mp3">
+            Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>

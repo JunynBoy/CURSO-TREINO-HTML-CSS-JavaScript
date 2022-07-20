@@ -1,0 +1,19 @@
+
+
+
+*{
+    /*configurações globais da css*/
+}
+
+
+body{
+    text-align: center;
+    background-image: linear-gradient(to bottom, #592730,#171326,#A64444,#D26B4C);
+    background-attachment: fixed;
+}
+
+h1{
+    color: rgb(2, 2, 19);
+    
+}
+ 

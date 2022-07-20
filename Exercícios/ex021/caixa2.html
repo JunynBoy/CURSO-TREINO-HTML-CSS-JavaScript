@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.479);
+            background-color: white;
+            padding:10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+        }
+
+        main{
+            border-radius: 20px 0px;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.479);
+        }
+        nav{
+            text-align: center;
+            background-color: #4e4e4e;
+            padding: 3px;
+            box-shadow:inset 5px 5px 15px rgba(0, 0, 0, 0.479);
+        }
+
+        nav>a:hover{
+            text-decoration: underline;
+        }
+
+        nav>a{
+            text-decoration: none;
+            color: white;
+            font-weight:bold;
+            margin-right: 30px;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article>aside{
+            background-color: #9e9e9e;
+        }
+
+        footer{
+            
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 2px;
+            margin: auto;
+            border-radius: 0px 10px;
+
+        }
+        footer>p{
+            margin: 0px;
+        }
+
+        div#bola{
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            margin-top: 10px;
+            border-radius: 50%;
+            text-align: center;
+            
+        }
+
+        div#bola>a{
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            font-family: fantasy;
+            position: relative;
+            top: 80px;
+            left: center;
+            
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <H1>Meu site</H1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política e Tecnologia</p>
+
+        </section>
+        <section id="noticias"></section>
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
+                    elit. Nisi necessitatibus harum sequi iure debitis,
+                    asperiores atque laboriosam repudiandae nesciunt 
+                    aperiam quas et laudantium natus! Porro ut itaque
+                    beatae explicabo eaque.</p>
+                <aside>
+                    <p>Artigo Escrito por Jose da silva</p>
+                </aside>
+            </article>
+    </main>
+    <footer>
+        <p>Desenvolvido por Marcos Gasparini Junior</p>
+    </footer>
+    <a href="#">
+        <div id="bola">
+            Teste p/ brincar   
+    </div>
+    </a>    
+    
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(194, 233, 203);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1{
+    color:rgb(0, 100, 0) ;
+
+}
+
+
+/*
+    em HTML ID = em Css é #
+    em HTML Class = em CSS é .
+*/
+#principal{
+    text-align: center;
+    background-color: rgb(85, 141, 69);
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow:5px 5px 15px black;
+
+}
+
+.basico{
+    color: #4b3c80;
+    
+}
+
+.intermediario{
+    color: #807b3c;
+
+}
+
+.avancado{
+    color: #803c3c;
+
+}
+
+.gay{
+    background-color: rgb(255, 0, 0);
+}

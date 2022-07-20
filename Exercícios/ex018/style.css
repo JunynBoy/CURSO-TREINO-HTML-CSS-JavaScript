@@ -1,0 +1,34 @@
+@font-face {
+    font-family:'HarryP';
+    src: url(fontes/HARRYP.TTF);
+    
+
+}
+
+main{
+    background-color: rgb(231, 189, 126);
+    text-align: center;
+    width: 600px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow:5px 5px 15px black;
+
+}
+
+p{
+    font-family: 'HarryP';
+    text-align: justify;
+}
+
+h1{
+    font-family:'HarryP';
+    font-size: 5em;
+}
+
+body{
+
+    background-image: linear-gradient(purple, black);
+    background-attachment: fixed;
+
+}
