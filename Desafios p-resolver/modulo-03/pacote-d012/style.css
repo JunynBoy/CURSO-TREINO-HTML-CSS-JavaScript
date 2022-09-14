@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh; /* height - altura  width - largura */
+    background-color: dark;
+
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* container pai > container filho,  (>) seleciona o filho */
+header > h1{
+    padding-top: 50px;
+    /*text-transform: uppercase;-> todas as letras ficam maiúsculas */
+    font-variant: small-caps; /* primeiras letras sempre maiúsculas */
+}
+
+header > p {
+    padding-bottom: 50px;
+
+}
+
+header a, footer a{  /* todos os links dentro do header e do footer*/
+    color: white;
+    text-decoration: none;
+    font-weight: bolder; /*peso da fonte*/
+}
+
+header a:hover footer a:hover{
+    text-decoration: underline;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal { /* quando é classe colocamos . quando é id colocamos #*/
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+section.imagem > p{
+    padding: 10px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.281);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
