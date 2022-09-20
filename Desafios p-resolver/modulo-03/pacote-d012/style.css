@@ -1,4 +1,13 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Passion One', cursive;
+    --fonte3:'Sriracha', cursive;
+
+}
 
 *{
     margin: 0px;
@@ -8,7 +17,7 @@
 html, body {
     min-height: 100vh; /* height - altura  width - largura */
     background-color: dark;
-
+    font-family:var(--fonte1);
 }
 
 header{
@@ -19,10 +28,13 @@ header{
 
 /* container pai > container filho,  (>) seleciona o filho */
 header > h1{
+    font-family: var(--fonte2);
     padding-top: 50px;
     /*text-transform: uppercase;-> todas as letras ficam maiúsculas */
     font-variant: small-caps; /* primeiras letras sempre maiúsculas */
+    font-size: 10vw; /* vw=  % da view-width */ 
 }
+
 
 header > p {
     padding-bottom: 50px;
@@ -41,8 +53,14 @@ header a:hover footer a:hover{
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
+    line-height: 2em; /*define a altura da linha do Texto ( mais espaçamento )*/
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+section>p{
+    padding-bottom: 2em;
 }
 
 section.normal { /* quando é classe colocamos . quando é id colocamos #*/
@@ -51,15 +69,31 @@ section.normal { /* quando é classe colocamos . quando é id colocamos #*/
 }
 
 section.imagem {
-    
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.400);
     background-color: rgb(51, 51, 51);
     color: white;
+    background-attachment: fixed;
 }
 
 section.imagem > p{
-    padding: 10px;
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.281);
+    text-shadow: 1px 1px 0px black;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+section#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02{
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+
 }
 
 footer{
