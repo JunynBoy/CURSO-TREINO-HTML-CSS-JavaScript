@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex23 - Tabelas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        table{
+            /*o border colapse vai juntar as bordas da planilha*/
+            border-collapse: collapse; /*o valor padrao é separate*/
+            padding: 10px;
+            box-shadow: 5px 5px 15px black;
+        }
+        table{
+            margin: auto;
+            border: 3px solid black;
+            background-color: rgba(128, 128, 128, 0.301);
+        }
+        td{
+            
+            
+            padding: 8px;
+            
+        }
+        td.vermelho{
+            box-shadow:5px 1px 5px rgba(0, 0, 0, 0.562) inset;
+            background-color: rgb(255, 0, 0);
+            color: rgb(255, 0, 0);
+        }
+        td.marrom{
+            background-color: #644827;
+            box-shadow:5px 1px 5px rgba(0, 0, 0, 0.562) inset;
+            color: #644827;
+        }
+        td.bege{
+            background-color: #e9ceaf ;
+            box-shadow:5px 1px 5px rgba(0, 0, 0, 0.562) inset;
+            color: #e9ceaf;
+        }
+        td.preto{
+            background-color: black;
+            box-shadow:5px 1px 5px rgba(0, 0, 0, 0.562) inset;
+            color: black;
+        }
+        td.azul{
+            background-color: #2d2db6;
+            box-shadow:5px 1px 5px rgba(0, 0, 0, 0.562) inset;
+            color: #2d2db6;
+        }
+        td.amarelo{
+            background-color: yellow;
+            box-shadow:5px 1px 5px rgba(0, 0, 0, 0.562) inset;
+            color: yellow;
+        }
+        
+        h1{
+            text-align: center  ;
+            text-shadow: 2px 1px 1px black;
+            color: red ;
+            background-color: gray;
+            margin-bottom: 30px;
+            padding: 10px;
+            border-bottom: rgba(0, 0, 0, 0.603) solid 8px;
+        }
+        p{
+            text-align: center;
+            text-shadow: 1px 1px 2px black;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+        HIERARQUIA DE TABELAS (simples)
+        TABLE = tabela
+            TABLE ROW = linha de tabela
+                TABLE HEADER =  cabeçalho de tabela
+                TABLE DATA = dado de tabela-->
+    <table>
+        <tr> 
+            <td>A1</td>
+            <td>A1</td>
+            <td>A1</td>
+            <td>A1</td>
+            <td class="vermelho">A1</td>
+            <td class="vermelho">A1</td>
+            <td class="vermelho">A1</td>
+            <td class="vermelho">A1</td>
+            <td class="vermelho">A1</td>
+            <td class="vermelho">A1</td>
+            <td>A1</td>
+            <td>A1</td>
+            <td>A1</td>
+            <td>A1</td>
+            <td>A1</td>
+        </tr>
+        <tr>
+            <td>B1</td>
+            <td>B1</td>
+            <td>B1</td>
+            <td class="vermelho">B1</td>
+            <td class="vermelho">B1</td>
+            <td class="vermelho">B1</td>
+            <td class="vermelho">B1</td>
+            <td class="vermelho">B1</td>
+            <td class="vermelho">B1</td>
+            <td class="vermelho">B1</td>
+            <td class="vermelho">B1</td>
+            <td class="vermelho">B1</td>
+            <td>B1</td>
+            <td>B1</td>
+            <td>B1</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td>C1</td>
+            <td>C1</td>
+            <td class="marrom">C1</td>
+            <td class="marrom">C1</td>
+            <td class="marrom">C1</td>
+            <td class="bege">C1</td>
+            <td class="bege">C1</td>
+            <td class="preto">C1</td>
+            <td class="bege">C1</td>
+            <td>C1</td>
+            <td>C1</td>
+            <td>C1</td>
+            <td>C1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>D1</td>
+            <td>D1</td>
+            <td class="marrom">D1</td>
+            <td class="bege">D1</td>
+            <td class="marrom">D1</td>
+            <td class="bege">D1</td>
+            <td class="bege">D1</td>
+            <td class="bege">D1</td>
+            <td class="preto">D1</td>
+            <td class="bege">D1</td>
+            <td class="bege">D1</td>
+            <td class="bege">D1</td>
+            <td>D1</td>
+            <td>D1</td>
+            <td>D1</td>
+        </tr>
+        <tr> 
+            <td>E1</td>
+            <td>E1</td>
+            <td class="marrom">E1</td>
+            <td class="bege">E1</td>
+            <td class="marrom">E1</td>
+            <td class="marrom">E1</td>
+            <td class="bege">E1</td>
+            <td class="bege">E1</td>
+            <td class="bege">E1</td>
+            <td class="marrom">E1</td>
+            <td class="bege">E1</td>
+            <td class="bege">E1</td>
+            <td class="bege">E1</td>
+            <td>E1</td>
+            <td>E1</td>
+        </tr>
+        <tr>
+            <td>F1</td>
+            <td>F1</td>
+            <td class="marrom">F1</td>
+            <td class="marrom">F1</td>
+            <td class="bege">F1</td>
+            <td class="bege">F1</td>
+            <td class="bege">F1</td>
+            <td class="bege">F1</td>
+            <td class="marrom">F1</td>
+            <td class="marrom">F1</td>
+            <td class="marrom">F1</td>
+            <td class="marrom">F1</td>
+            <td>F1</td>
+            <td>F1</td>
+            <td>F1</td>
+        </tr>
+        <tr>
+            <td>G1</td>
+            <td>G1</td>
+            <td>G1</td>
+            <td>G1</td>
+            <td class="bege">G1</td>
+            <td class="bege">G1</td>
+            <td class="bege">G1</td>
+            <td class="bege">G1</td>
+            <td class="bege">G1</td>
+            <td class="bege">G1</td>
+            <td class="bege">G1</td>
+            <td>G1</td>
+            <td>G1</td>
+            <td>G1</td>
+            <td>G1</td>
+        </tr>
+        <tr>
+            <td>H1</td>
+            <td>H1</td>
+            <td>H1</td>
+            <td class="vermelho">H1</td>
+            <td class="vermelho">H1</td>
+            <td class="azul">H1</td>
+            <td class="vermelho">H1</td>
+            <td class="vermelho">H1</td>
+            <td class="vermelho">H1</td>
+            <td>H1</td>
+            <td>H1</td>
+            <td>H1</td>
+            <td>H1</td>
+            <td>H1</td>
+            <td>H1</td>
+        </tr>
+        <tr> 
+            <td>I1</td>
+            <td>I1</td>
+            <td class="vermelho">I1</td>
+            <td class="vermelho">I1</td>
+            <td class="vermelho">I1</td>
+            <td class="azul">I1</td>
+            <td class="vermelho">I1</td>
+            <td class="vermelho">I1</td>
+            <td class="azul">I1</td>
+            <td class="vermelho">I1</td>
+            <td class="vermelho">I1</td>
+            <td class="vermelho">I1</td>
+            <td>I1</td>
+            <td>I1</td>
+            <td>I1</td>
+        </tr>
+        <tr>
+            <td>J1</td>
+            <td class="vermelho">J1</td>
+            <td class="vermelho">J1</td>
+            <td class="vermelho">J1</td>
+            <td class="vermelho">J1</td>
+            <td class="azul">J1</td>
+            <td class="azul">J1</td>
+            <td class="azul">J1</td>
+            <td class="azul">J1</td>
+            <td class="vermelho">J1</td>
+            <td class="vermelho">J1</td>
+            <td class="vermelho">J1</td>
+            <td class="vermelho">J1</td>
+            <td>J1</td>
+            <td>J1</td>
+        </tr>
+        <tr>
+            <td>K1</td>
+            <td class="bege">K1</td>
+            <td class="bege">K1</td>
+            <td class="vermelho">K1</td>
+            <td class="azul">K1</td>
+            <td class="amarelo">K1</td>
+            <td class="azul">K1</td>
+            <td class="azul">K1</td>
+            <td class="amarelo">K1</td>
+            <td class="azul">K1</td>
+            <td class="vermelho">K1</td>
+            <td class="bege">K1</td>
+            <td class="bege">K1</td>
+            <td>K1</td>
+            <td>K1</td>
+        </tr>
+        <tr>
+            <td>L1</td>
+            <td class="bege">L1</td>
+            <td class="bege">L1</td>
+            <td class="bege">L1</td>
+            <td class="azul">L1</td>
+            <td class="azul">L1</td>
+            <td class="azul">L1</td>
+            <td class="azul">L1</td>
+            <td class="azul">L1</td>
+            <td class="azul">L1</td>
+            <td class="bege">L1</td>
+            <td class="bege">L1</td>
+            <td class="bege">L1</td>
+            <td>L1</td>
+            <td>L1</td>
+        </tr>
+        <tr> 
+            <td>M1</td>
+            <td class="bege">M1</td>
+            <td class="bege">M1</td>
+            <td class="azul">M1</td>
+            <td class="azul">M1</td>
+            <td class="azul">M1</td>
+            <td class="azul">M1</td>
+            <td class="azul">M1</td>
+            <td class="azul">M1</td>
+            <td class="azul">M1</td>
+            <td class="azul">M1</td>
+            <td class="bege">M1</td>
+            <td class="bege">M1</td>
+            <td>M1</td>
+            <td>M1</td>
+        </tr>
+        <tr>
+            <td>N1</td>
+            <td>N1</td>
+            <td>N1</td>
+            <td class="azul">N1</td>
+            <td class="azul">N1</td>
+            <td class="azul">N1</td>
+            <td>N1</td>
+            <td>N1</td>
+            <td class="azul">N1</td>
+            <td class="azul">N1</td>
+            <td class="azul">N1</td>
+            <td>N1</td>
+            <td>N1</td>
+            <td>N1</td>
+            <td>N1</td>
+        </tr>
+        <tr>
+            <td>O1</td>
+            <td>O1</td>
+            <td class="marrom">O1</td>
+            <td class="marrom">O1</td>
+            <td class="marrom">O1</td>
+            <td>O1</td>
+            <td>O1</td>
+            <td>O1</td>
+            <td>O1</td>
+            <td class="marrom">O1</td>
+            <td class="marrom">O1</td>
+            <td class="marrom">O1</td>
+            <td>O1</td>
+            <td>O1</td>
+            <td>O1</td>
+        </tr>
+        <tr>
+            <td>P1</td>
+            <td class="marrom">P1</td>
+            <td class="marrom">P1</td>
+            <td class="marrom">P1</td>
+            <td class="marrom">P1</td>
+            <td>P1</td>
+            <td>P1</td>
+            <td>P1</td>
+            <td>P1</td>
+            <td>P1</td>
+            <td class="marrom">P1</td>
+            <td class="marrom">P1</td>
+            <td class="marrom">P1</td>
+            <td class="marrom">P1</td>
+            <td>P1</td>
+        </tr>
+    </table>
+    <br>
+    <p>Esse exercício serviu para entender apenas a estrutura básica de uma tabela, mas eu o aprimorei Ha ha ha ha ha</p>
+</body>
+</html>
