@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol{
+            display: inline-block;
+            text-align: justify;
+            background-color: white;
+            border: 1px solid black;
+        }
+        li{
+            padding: 10px;
+            
+        }
+        body{
+            background-color: beige ;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        h1{
+            padding-top: 20px;
+            padding-bottom: 10vw;
+        }
+        table{
+            box-shadow: 5px 5px 15px black;
+            background-color: white;
+            margin: auto;
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td{
+            border: 2px solid black;
+            text-align: center;
+        }
+        td{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <caption>Exemplo de mesclagem:</caption>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+        </tr>
+        <tr>
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td rowspan="2">F</td>
+        </tr>
+        <tr>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td colspan="2">K</td>
+        </tr>
+    </table>
+    <br>
+    <ol type="I">
+        <li>Usando o atributo <b>rowspan=""</b> para expandir as colunas para baixo</li>
+        <li>E usando <b>colspan=""</b> para expandir as linhas</li>
+    </ol>
+</body>
+</html>
+
+
+
+
+
