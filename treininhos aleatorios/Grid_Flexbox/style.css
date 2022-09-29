@@ -1,0 +1,68 @@
+
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.header{
+    background: #1d1e20;
+    display: flex;
+    flex-wrap: wrap; /* serve para dizer q um bloco vai em cima do outro se a tela apertar demais*/
+    justify-content:space-between; 
+    align-items: center;
+    padding: 20px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+/* CSS FLEXBOX */
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.flex > div > p{
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.342) ;
+}
+.flex > div{
+    flex: 1 1 200px;  /**/
+    margin: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.flex > div:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.281);
+
+}
