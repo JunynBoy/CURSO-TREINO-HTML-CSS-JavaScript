@@ -1,3 +1,4 @@
+
 body{
     margin: 0px;
     padding: 0px;
@@ -85,10 +86,40 @@ img{
     
 }
 
+.ex li:hover{
+    background-color: #1f1f46;
+    box-shadow: 5px 5px 5px black;   
+}
+
+.ex li:active{
+    box-shadow: inset 5px 5px 5px black;
+    transition: 0.3s;
+}
+
 .ex img{
     display: block;
     width: 158px;
     height: 100px;
 }
 
+
+footer{
+    background-color: #06063f;
+    color: white;
+    padding: 2px;
+    text-align: center;
+}
+
+footer>p>a{
+    text-decoration: none;
+    color: white;
+}
+
+footer>p>a:hover{
+    text-decoration:underline;
+}
+
+a.externo::after{
+    content: '\1F517';
+}
 
