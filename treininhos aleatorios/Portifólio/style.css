@@ -69,7 +69,8 @@ img{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    
+    text-align: center;
+    padding: 50px;
     
 
 }
