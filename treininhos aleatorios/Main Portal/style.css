@@ -27,8 +27,8 @@ header > div > h1{
     
 }
 
- ol, li, a{
-    padding: 10px;
+section ol, li, a{
+    padding: 5px;
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -81,7 +81,7 @@ img{
 
 .ex li{
     background-color: #06063f;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
     margin-bottom: 5px;
     
@@ -124,3 +124,24 @@ a.externo::after{
     content: '\1F517';
 }
 
+nav ol{
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    margin: 0px;
+}
+
+.info{
+    width: 65%;
+}
+
+.foto img{
+    display: block;
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px black;
+    
+}
