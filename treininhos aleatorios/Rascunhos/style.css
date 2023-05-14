@@ -150,16 +150,21 @@ body .ui-button.ui-button-secondary, body .ui-splitbutton.ui-button-secondary > 
 .main{
     background-image: url(https://c.pxhere.com/photos/27/00/city_windows_sky_urban_blackandwhite_monochrome_architecture_clouds-335655.jpg!d);
     background-size: cover;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* align-items: flex-end; */
+    /* justify-content: space-around; */
+    /* flex-wrap: wrap; */
+	background-attachment: fixed;
+	
 }
+
+
 
 .conteudo_inicial{
     min-height: 5vh;
     max-width: 600px;
     padding: 150px 20px 150px 20px;
+	display:block;
 }
 
 
@@ -190,11 +195,33 @@ section{
 }
 
 section{
-    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: space-around;
 
 }
-.about_project{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+section > div {
+    max-width: 300px;
+}
+
+.about_this > h1{
+    text-align: center;
+    text-align: justify;
+}
+
+.about_this > p{
+    text-indent: 1rem;
+}
+
+.about_this{
+
+    
+}
+
+
+.end{
+
+
 }
